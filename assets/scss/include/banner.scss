@@ -1,0 +1,36 @@
+.banner {
+  width: 100%;
+  margin-top: 120px;
+
+  &-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    &-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 50px;
+      text-transform: capitalize;
+      -webkit-text-stroke: 1px #1b1c57;
+      color: #1B1C57;
+      width: 35%;
+
+      &-stroke {
+        color: #fff;
+        -webkit-text-stroke: 1px #1b1c57;
+      }
+    }
+
+    &-desc {
+
+      width: 40%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #626687;
+      opacity: 0.75;
+    }
+  }
+}

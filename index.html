@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/hamburger.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="website icon" type="svg" href="./assets/img/icons/logo.svg">
   <title>Hounter</title>
 </head>
@@ -14,13 +15,16 @@
 <body>
 
   <div class="wrapper">
+    <img class="banner-blur-1" src="./assets/img/img/Color Blur.png" alt="">
     <header class="header-bg">
+
       <header class="header container">
 
-        <a href="#">
-          <svg class="logo">
-            <use href="./assets/img/icons/svg-sprites.svg#arrow-logo"></use>
+        <a href="#" class="logo">
+          <svg>
+            <use href="./assets/img/icons/svg-sprites.svg#logo"></use>
           </svg>
+          Hounter
         </a>
 
         <div class="hamburger-menu">
@@ -30,30 +34,41 @@
         <nav class="nav__collapse">
           <nav class="nav">
             <a href="#" class="nav-link">About Us</a>
-            <a href="#" class="nav-link">Property</a>
-            <div class="nav__dropdown">
-              <button onclick="myFunction()" class="nav__link dropbtn">
-                <span>Use Cases</span>
-                <svg class="nav__link-icon">
-                  <use href="./assets/img/icons/svg-sprites.svg#"></use>
-                </svg>
-              </button>
-              <div id="myDropdown" class="header-nav__dropdown-content">
-                <div class="header-nav__dropdown-content__links">
-                  <a href="#">Item 1</a>
-                  <a href="#">Item 2</a>
-                  <a href="#">Item 3</a>
-                </div>
+            <a href="#" class="nav-link">Article</a>
+            <div class="dropdown nav-link">
+              <button class="dropbtn">Property</button>
+              <svg class="arrow-down">
+                <use href="./assets/img/icons/svg-sprites.svg#arrow-down"></use>
+              </svg>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
               </div>
             </div>
           </nav>
           <a href="#" class="header-button">Sign Up!</a>
         </nav>
+        <img class="banner-bg-image" src="./assets/img/img/house.png" alt="">
       </header>
     </header>
+    <section class="banner container">
+      <div class="banner-text">
+        <p class="banner-text-title">
+          find the place to <br>
+          live
+          <span class="banner-text-title-stroke">your dreams</span>
+          <br>
+          easily here <br>
+        </p>
+        <p class="banner-text-desc">
+          Everything you need about finding your place to live will be here, where it will be easier for you
+        </p>
+      </div>
+    </section>
   </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
