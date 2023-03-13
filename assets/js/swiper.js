@@ -1,6 +1,10 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-const swiper = new Swiper('.swiper', {
-  speed: 400,
-  spaceBetween: 100,
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  centeredSlides: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  
 });

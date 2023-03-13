@@ -56,7 +56,6 @@
   display: block;
 }
 
-
 .nav__collapse {
   display: flex;
   width: 100%;
@@ -82,7 +81,7 @@
 }
 
 .header-button {
-  background: #D1FAE5;
+  background: #d1fae5;
   border-radius: 32px;
   font-weight: 600;
   font-size: 14px;
@@ -90,11 +89,11 @@
   line-height: 22px;
   padding: 12px 24px;
   color: #047857;
-  transition: .6s all;
+  transition: 0.6s all;
 }
 
 .header-button:hover {
-  color: #D1FAE5;
+  color: #d1fae5;
   background: #047857;
 }
 
@@ -106,20 +105,21 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: capitalize;
-  color: #1B1C57;
+  color: #1b1c57;
 
   & svg {
     width: 32px;
     height: 32px;
-
   }
 }
 
 .banner-bg-image {
   position: absolute;
-  width: 720px;
-  height: 720px;
+
+  width: auto;
+  height: 670px;
   top: 0;
+
   right: 0;
   z-index: -1;
 }
@@ -130,20 +130,34 @@
 
 @media screen and (max-width: 768px) {
   .banner-blur-1 {
+    width: 300px;
+  }
+  .swiper{
+
     display: none;
+  }
+  .header {
+    
+    &-bg {
+      z-index: 999999;
+      position: fixed;
+      width: 90%;
+      top: 0;
+    }
   }
 
   .banner-bg-image {
-    position: absolute;
+    display: none;
     width: 100%;
     height: auto;
-    top: 0;
+    top: 70px;
+    filter: brightness(15%);
     right: 0;
-    z-index: -1;
+    z-index: 1;
   }
 
   .header-button {
-    background: #D1FAE5;
+    background: #d1fae5;
     border-radius: 32px;
     font-weight: 600;
     font-size: 14px;
@@ -152,6 +166,6 @@
     line-height: 22px;
     padding: 10px 20px;
     color: #047857;
-    transition: .6s all;
+    transition: 0.6s all;
   }
 }

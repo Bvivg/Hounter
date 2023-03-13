@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/hamburger.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="website icon" type="svg" href="./assets/img/icons/logo.svg">
   <title>Hounter</title>
 </head>
@@ -49,22 +49,92 @@
           </nav>
           <a href="#" class="header-button">Sign Up!</a>
         </nav>
-        <img class="banner-bg-image" src="./assets/img/img/house.png" alt="">
+        <div class="banner-bg-image-block">
+
+          <img class="banner-bg-image " src="./assets/img/img/house.png" alt="">
+        </div>
       </header>
     </header>
     <section class="banner container">
-      <div class="banner-text">
-        <p class="banner-text-title">
-          find the place to <br>
-          live
-          <span class="banner-text-title-stroke">your dreams</span>
-          <br>
-          easily here <br>
-        </p>
-        <p class="banner-text-desc">
-          Everything you need about finding your place to live will be here, where it will be easier for you
-        </p>
+      <div class="banner-block">
+        <div class="banner-text">
+          <div class="banner-text-block">
+            <p class="banner-text-title">
+              find the place to
+              live
+              <span class="banner-text-title-stroke">your dreams</span>
+              easily here
+            </p>
+            <p class="banner-text-desc">
+              Everything you need about finding your place to live will be here, where it will be easier for you
+            </p>
+          </div>
+          <form class="banner-text-search">
+            <svg class="gps">
+              <use href="./assets/img/icons/svg-sprites.svg#gps"></use>
+            </svg>
+            <input type="search" class="banner-text-search-input" placeholder="Search for the location you want!">
+            <button class="banner-text-search-btn">
+              Search
+              <svg class="arrow-left">
+                <use href="./assets/img/icons/svg-sprites.svg#arrow-left"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="banner-text-partners">
+            <p>Our Partnership</p>
+            <div class="banner-text-partners-icons">
+              <a href="https://www.traveloka.com/en-en/">
+                <img class="company-logo-icon" src="./assets/img/icons/traveloka_logo.svg" alt="">
+              </a>
+              <a href="https://www.tiket.com/">
+                <img class="company-logo-icon" src="./assets/img/icons/ticket_logo.svg" alt="">
+              </a>
+              <a href="https://www.airbnb.ru/">
+                <img class="company-logo-icon" src="assets/img/icons/airbnb_logo.svg" alt="">
+              </a>
+              <a href="https://www.tripadvisor.ru/">
+                <img class="company-logo-icon" src="./assets/img/icons/trip_logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide banner-slide-1" style="width: 250px !important;">
+                <div class="">
+                  <img src="./assets/img/img/profile-logo.png" alt="">
+                </div>
+                <div class="swiper-slide-block">
+                  <span>1K+ People</span>
+                  <p>Successfully Getting Home</p>
+                </div>
+              </div>
+              <div class="swiper-slide banner-slide-2">
+                <div class="">
+                  <img class="caprise" src="./assets/img/img/house-icon.png" alt="">
+                </div>
+                <div class="swiper-slide-block">
+                  <span>56 Houses</span>
+                  <p>Sold Monthly</p>
+                </div>
+              </div>
+              <div class="swiper-slide banner-slide-3">
+                <div class="">
+                  <img style="width: 56px;" src="./assets/img/img/profile-logo-solo.png" alt="">
+                </div>
+                <div class="swiper-slide-block">
+                  <span>4K+</span>
+                  <p>People Looking for New Homes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>
       </div>
+
     </section>
   </div>
 
