@@ -1,0 +1,116 @@
+.footer {
+  margin-top: 120px;
+  display: flex;
+  align-items: start;
+  width: 100%;
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 26%;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #626687;
+      opacity: 0.75;
+    }
+  }
+  &-contacts {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    &-logo {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  &-list {
+    margin-left: auto;
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+    align-items: start;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      span {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #0e1735;
+      }
+      li {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: #888b97;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #626687;
+      opacity: 0.75;
+    }
+  }
+  &-contacts {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    &-logo {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  &-list {
+    margin: 0;
+    gap:5%;
+    width:100%;
+    display: flex;
+    align-items: start;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      span {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #0e1735;
+      }
+      li {
+        font-weight: 400;
+        font-size:8px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: #888b97;
+      }
+    }
+  }
+}
+}

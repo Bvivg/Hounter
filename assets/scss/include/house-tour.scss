@@ -1,0 +1,282 @@
+.house-tour {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  &-block {
+    display: flex;
+    flex-direction: row;
+    &-container {
+      max-width: 55%;
+      margin: 0 100px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &-line::before {
+        content: "";
+        position: absolute;
+        background: #f0f3fd;
+        width: 75%;
+        height: 2px;
+      }
+
+      &-desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #626687;
+      }
+      &-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        & p {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          color: #1b1c57;
+        }
+        &-condition {
+          display: grid;
+          grid-template-columns: 150px 2fr;
+          column-gap: 50px;
+          row-gap: 10px;
+          &-icon {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #3c4563;
+            svg {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+      &-author {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &-logo {
+          width: 56px;
+          height: 56px;
+        }
+        &-name {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #0e1735;
+          }
+          p:last-child {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #888b97;
+          }
+        }
+        &-button {
+          display: flex;
+          align-items: center;
+          background: #10b981;
+          border-radius: 32px;
+          gap: 20px;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          padding: 14px;
+          svg {
+            height: 19px;
+            width: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slider-box figure {
+  max-width: 488px;
+  margin: 0 auto -130px;
+  video {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.thumb_img_list {
+  text-align: center;
+  ul li {
+    display: inline-block;
+    width: 96px;
+    margin: 0 5px;
+    cursor: pointer;
+    img {
+      display: block;
+    }
+  }
+}
+.couch {
+  width: 296px !important;
+}
+@media screen and (max-width: 768px) {
+  .house-tour {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &-block {
+      display: flex;
+      flex-direction: column;
+      &-container {
+        max-width: 100%;
+        margin: 0 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &-line::before {
+          content: "";
+          position: absolute;
+          background: #f0f3fd;
+          width: 100%;
+          height: 2px;
+        }
+
+        &-desc {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 18px;
+          color: #626687;
+        }
+        &-detail {
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          & p {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 28px;
+            color: #1b1c57;
+          }
+          &-condition {
+            display: grid;
+            grid-template-columns: 120px 2fr;
+            column-gap: 50px;
+            row-gap: 10px;
+            &-icon {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 10px;
+              color: #3c4563;
+              svg {
+                width: 14px;
+                height: 14px;
+              }
+            }
+          }
+        }
+        &-author {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 20px;
+          &-logo {
+            width: 36px;
+            height: 36px;
+          }
+          &-name {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            p {
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 14px;
+              color: #0e1735;
+            }
+            p:last-child {
+              font-weight: 500;
+              font-size: 10px;
+              line-height: 10px;
+              color: #888b97;
+            }
+          }
+          &-button {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            background: #10b981;
+            border-radius: 22px;
+            gap: 10px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 22px;
+            padding: 10px;
+            svg {
+              height: 15px;
+              width: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .block-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1b1c57;
+  }
+  .slider-box figure {
+  max-width: 300px;
+  margin: 0 auto -150px;
+  video {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.thumb_img_list {
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  text-align: center;
+  ul li {
+    display: inline-block;
+    width: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.couch {
+  width: 156px !important;
+  img{
+    width: 100%;
+  border-radius: 5px;
+  }
+}
+}
+.swiper-slide{
+  margin: 0 !important;
+}
+.swiper-wrapper{
+  gap: 30px;
+}

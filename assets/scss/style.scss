@@ -1,4 +1,4 @@
-@import './fonts.scss';
+@import "./fonts.scss";
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +12,14 @@
   font-weight: inherit;
   font-family: inherit;
 }
-
+html,body{
+  overflow-x: hidden;
+}
+body{
+  position: relative;
+}
 .wrapper {
-  font-family: 'Lexend';
+  font-family: "Lexend";
   overflow: hidden;
 }
 
@@ -23,7 +28,17 @@
   margin: 0 auto;
 }
 
-@import './layout/header.scss';
-@import './include/banner.scss';
 
-@import './layout/footer.scss';
+@import "./layout/header.scss";
+
+@import "./include/banner.scss";
+@import "./include/house-list.scss";
+@import "./include/house-tour.scss";
+@import "./include/house-review.scss";
+@import "./include/house-sell.scss";
+@import "./include/subscribe.scss";
+
+@import "./layout/footer.scss";
+@media screen and (max-width: 768px) {
+
+}

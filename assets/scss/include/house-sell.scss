@@ -1,0 +1,329 @@
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.slider-thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slider-thumbnails-img {
+  width: 200px;
+  height: 144px;
+  cursor: pointer;
+}
+
+.slider-main {
+  text-align: center;
+  max-width: 560px;
+  max-height: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.slider-main img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+.house-sell {
+  margin-top: 50px !important;
+  width: 100%;
+  &-container {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-button {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 16px 12px;
+      color: #ffffff;
+      background: #10b981;
+      border-radius: 32px;
+    }
+  }
+  &-block {
+    display: flex;
+    align-items: start;
+    gap: 17px;
+    flex-direction: column;
+    &-author {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #3c4563;
+      & img {
+        width: 32px !important;
+        height: 32px !important;
+      }
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: left;
+      text-transform: capitalize;
+      color: #1b1c57;
+    }
+    &-desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: left;
+      color: #626687;
+      opacity: 0.75;
+    }
+    &-date {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #888b97;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+
+      gap: 14px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  &-card {
+    display: flex;
+    max-width: 572px;
+    gap: 32px;
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #1b1c57;
+    }
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #888b97;
+      display: flex;
+      align-items: center;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+.ImgButtonExtra {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    gap: 100px;
+  }
+
+  .slider-thumbnails {
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0;
+  }
+
+  .slider-thumbnails-img {
+    width: 80px !important;
+    min-height: 57px !important;
+    cursor: pointer;
+  }
+
+  .slider-main {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 280px;
+    min-height: 201px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .slider-main-img {
+    width: 100%;
+    min-height: 201px;
+    transition: opacity 0.3s ease;
+  }
+  .house-sell {
+    margin-top: 100px;
+    margin: 0;
+    width: 100%;
+    &-title {
+      margin: 0 auto;
+      width: 150px;
+    }
+    &-container {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &-button {
+        font-weight: 600;
+        font-size: 7px;
+        line-height: 11px;
+        padding: 8px 6px;
+        color: #ffffff;
+        background: #10b981;
+        border-radius: 22px;
+      }
+    }
+    &-block {
+      display: flex;
+      align-items: start;
+      gap: 17px;
+      flex-direction: column;
+      &-author {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        width: max-content;
+        font-weight: 400;
+        font-size: 6px !important;
+        line-height: 6px !important;
+        color: #3c4563;
+        &-pc {
+          font-weight: 400;
+          font-size: 14px !important;
+          line-height: 22px;
+        }
+        img {
+          width: 16px !important;
+          height: 16px !important;
+        }
+      }
+      & &-title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+        text-transform: capitalize;
+        color: #1b1c57;
+      }
+      &-desc {
+        width: 100%;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: left;
+        color: #626687;
+        opacity: 0.75;
+      }
+      &-date {
+        font-weight: 400;
+        font-size: 5px !important;
+        line-height: 6px !important;
+        color: #888b97;
+        display: flex;
+        gap: 2px !important;
+        align-items: center;
+        gap: 14px;
+        &-main{
+          
+        font-size: 10px !important;
+        line-height: 20px !important;
+        }
+        svg {
+          width: 10px !important;
+          height: 10px !important;
+        }
+      }
+    }
+    &-card {
+      display: flex;
+      flex-direction: column;
+      max-width: 100px;
+      height: 170px;
+      gap: 10px;
+      &-block {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      p {
+        width: 100%;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 10px;
+        text-transform: capitalize;
+        color: #1b1c57;
+      }
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #888b97;
+        display: flex;
+        align-items: center;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  .ImgButtonExtra {
+    display: none;
+  }
+}
+.special-line {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  color: #f59e0b;
+  &::before {
+    content: "";
+    width: 32px;
+
+    height: 1px;
+    background: #f59e0b;
+    color: #f59e0b;
+  }
+}
+.margin {
+  margin: 12px 40px;
+}
+.block{
+  margin-top: 100px;
+}

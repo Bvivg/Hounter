@@ -1,12 +1,15 @@
 .header-bg {
-  position: sticky;
-  top: 0;
   z-index: 99999;
   padding: 0 20px;
+  width: 100%;
+  position: sticky;
+  top: 0;
   padding: 20px;
 }
 
 .header {
+  margin: 0 auto;
+  
   display: flex;
   width: 100%;
   align-items: center;
@@ -113,16 +116,13 @@
   }
 }
 
-.banner-bg-image {
+.banner-bg-image-block{
   position: absolute;
-
-  width: auto;
-  height: 670px;
+  right: -100px;
+  width: 800px;
   top: 0;
-
-  right: 0;
-  z-index: -1;
 }
+
 
 .banner-blur-1 {
   position: absolute;
@@ -132,15 +132,13 @@
   .banner-blur-1 {
     width: 300px;
   }
-  .swiper{
 
-    display: none;
-  }
   .header {
-    
     &-bg {
-      z-index: 999999;
+      z-index: 999999999999;
+      box-shadow: 5px 5px 30px #82ffd2;
       position: fixed;
+      background: #ffffff;
       width: 90%;
       top: 0;
     }
@@ -154,6 +152,7 @@
     filter: brightness(15%);
     right: 0;
     z-index: 1;
+  
   }
 
   .header-button {
