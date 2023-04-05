@@ -57,6 +57,7 @@ body {
 
 .wrapper {
   font-family: "Lexend";
+  position: relative;
   overflow: hidden;
 }
 
